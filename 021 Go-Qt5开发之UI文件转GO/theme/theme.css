@@ -1,0 +1,239 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  font-family: 微软雅黑; }
+
+:window {
+  background-color: #ffffff; }
+
+.QGroupBox {
+  margin-top: 5px;
+  padding-top: 2px; }
+  .QGroupBox::title {
+    top: -10px;
+    left: 10px; }
+
+.QCheckBox::checked {
+  color: #2f54eb; }
+
+.QCheckBox::indeterminate {
+  color: #f0ad4e; }
+
+.QCheckBox::indicator:unchecked {
+  image: url(theme/checkbox_unchecked.svg); }
+
+.QCheckBox::indicator:checked {
+  image: url(theme/checkbox_checked.svg); }
+
+.QCheckBox::indicator:indeterminate {
+  image: url(theme/checkbox_indeterminate.svg); }
+
+.QCheckBox::disabled {
+  color: rgba(142, 135, 135, 0.42); }
+
+.QRadioButton::indicator::unchecked {
+  image: url(theme/radiobutton_unchecked.svg); }
+
+.QRadioButton::checked {
+  color: #2f54eb; }
+
+.QRadioButton::indicator::checked {
+  image: url(theme/radiobutton_checked.svg); }
+
+.QRadioButton::disabled {
+  color: #8e8787; }
+
+.QDateEdit,
+.QSpinBox,
+.QTimeEdit,
+.QLineEdit,
+.QComboBox,
+.QTabWidget,
+.QTableWidget,
+.QFontComboBox,
+.QDateTimeEdit,
+.QDoubleSpinBox {
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #CCC; }
+  .QDateEdit:hover, .QDateEdit:focus,
+  .QSpinBox:hover,
+  .QSpinBox:focus,
+  .QTimeEdit:hover,
+  .QTimeEdit:focus,
+  .QLineEdit:hover,
+  .QLineEdit:focus,
+  .QComboBox:hover,
+  .QComboBox:focus,
+  .QTabWidget:hover,
+  .QTabWidget:focus,
+  .QTableWidget:hover,
+  .QTableWidget:focus,
+  .QFontComboBox:hover,
+  .QFontComboBox:focus,
+  .QDateTimeEdit:hover,
+  .QDateTimeEdit:focus,
+  .QDoubleSpinBox:hover,
+  .QDoubleSpinBox:focus {
+    border-color: #2f54eb; }
+  .QDateEdit:disabled,
+  .QSpinBox:disabled,
+  .QTimeEdit:disabled,
+  .QLineEdit:disabled,
+  .QComboBox:disabled,
+  .QTabWidget:disabled,
+  .QTableWidget:disabled,
+  .QFontComboBox:disabled,
+  .QDateTimeEdit:disabled,
+  .QDoubleSpinBox:disabled {
+    color: #504b4b;
+    border-color: rgba(146, 146, 146, 0.4);
+    background-color: rgba(139, 139, 139, 0.51); }
+
+.QDateEdit::up-button,
+.QSpinBox::up-button,
+.QTimeEdit::up-button,
+.QDateTimeEdit::up-button,
+.QDoubleSpinBox::up-button {
+  width: 20px;
+  image: url(theme/up.svg); }
+
+.QDateEdit::up-button:hover,
+.QSpinBox::up-button:hover,
+.QTimeEdit::up-button:hover,
+.QDateTimeEdit::up-button:hover,
+.QDoubleSpinBox::up-button:hover {
+  image: url(theme/up-primary.svg); }
+
+.QDateEdit::down-button,
+.QSpinBox::down-button,
+.QTimeEdit::down-button,
+.QDateTimeEdit::down-button,
+.QDoubleSpinBox::down-button {
+  width: 20px;
+  image: url(theme/down.svg); }
+
+.QDateEdit::down-button:hover,
+.QSpinBox::down-button:hover,
+.QTimeEdit::down-button:hover,
+.QDateTimeEdit::down-button:hover,
+.QDoubleSpinBox::down-button:hover {
+  image: url(theme/down-primary.svg); }
+
+.QTextEdit,
+.QTextBrowser,
+.QPlainTextEdit,
+.QTableWidgetItem {
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #CCC; }
+  .QTextEdit:hover, .QTextEdit:focus,
+  .QTextBrowser:hover,
+  .QTextBrowser:focus,
+  .QPlainTextEdit:hover,
+  .QPlainTextEdit:focus,
+  .QTableWidgetItem:hover,
+  .QTableWidgetItem:focus {
+    border-color: #2f54eb; }
+
+.QFontComboBox,
+.QComboBox {
+  margin-bottom: 2px; }
+  .QFontComboBox:editable,
+  .QComboBox:editable {
+    background: #ffffff; }
+  .QFontComboBox::drop-down,
+  .QComboBox::drop-down {
+    width: 20px;
+    border-left: 1px solid #CCC; }
+  .QFontComboBox::down-arrow,
+  .QComboBox::down-arrow {
+    image: url(theme/down.svg); }
+    .QFontComboBox::down-arrow:on,
+    .QComboBox::down-arrow:on {
+      image: url(theme/up.svg); }
+
+.QPushButton {
+  padding: 5px 10px;
+  color: #333;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #CCC; }
+  .QPushButton:hover {
+    color: #ffffff;
+    border-color: #929292;
+    background-color: #929292; }
+  .QPushButton::pressed {
+    color: #ffffff;
+    border-color: #808080;
+    background-color: #808080; }
+  .QPushButton:disabled {
+    color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(146, 146, 146, 0.4);
+    background-color: rgba(146, 146, 146, 0.08); }
+  .QPushButton[btn="primary"] {
+    color: #2f54eb;
+    border-color: #2f54eb; }
+    .QPushButton[btn="primary"]:hover {
+      color: #ffffff;
+      border-color: #2f54eb;
+      background-color: #2f54eb; }
+    .QPushButton[btn="primary"]::pressed {
+      color: #ffffff;
+      border-color: #0062cc;
+      background-color: #0062cc; }
+    .QPushButton[btn="primary"]:disabled {
+      color: rgba(47, 84, 235, 0.4);
+      border-color: rgba(47, 84, 235, 0.5);
+      background-color: rgba(47, 84, 235, 0.08); }
+  .QPushButton[btn="success"] {
+    color: #4cd964;
+    border-color: #4cd964; }
+    .QPushButton[btn="success"]:hover {
+      color: #ffffff;
+      border-color: #4cd964;
+      background-color: #4cd964; }
+    .QPushButton[btn="success"]::pressed {
+      color: #ffffff;
+      border-color: #2ac845;
+      background-color: #2ac845; }
+    .QPushButton[btn="success"]:disabled {
+      color: rgba(76, 217, 100, 0.4);
+      border-color: rgba(76, 217, 100, 0.5);
+      background-color: rgba(76, 217, 100, 0.08); }
+  .QPushButton[btn="warning"] {
+    color: #f0ad4e;
+    border-color: #f0ad4e; }
+    .QPushButton[btn="warning"]:hover {
+      color: #ffffff;
+      border-color: #f0ad4e;
+      background-color: #f0ad4e; }
+    .QPushButton[btn="warning"]::pressed {
+      color: #ffffff;
+      border-color: #ec971f;
+      background-color: #ec971f; }
+    .QPushButton[btn="warning"]:disabled {
+      color: rgba(240, 173, 78, 0.4);
+      border-color: rgba(240, 173, 78, 0.5);
+      background-color: rgba(240, 173, 78, 0.08); }
+  .QPushButton[btn="danger"] {
+    color: #dd524d;
+    border-color: #dd524d; }
+    .QPushButton[btn="danger"]:hover {
+      color: #ffffff;
+      border-color: #dd524d;
+      background-color: #dd524d; }
+    .QPushButton[btn="danger"]::pressed {
+      color: #ffffff;
+      border-color: #cf2d28;
+      background-color: #cf2d28; }
+    .QPushButton[btn="danger"]:disabled {
+      color: rgba(221, 82, 77, 0.4);
+      border-color: rgba(221, 82, 77, 0.5);
+      background-color: rgba(221, 82, 77, 0.08); }
